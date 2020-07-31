@@ -41,4 +41,59 @@ public class GoogleTest {
         // Проверить, что Appium появился в результатах поиска
         $("html").shouldHave(text("appium.io"));
     }
+
+    @Test
+    public void habrSearchAtGoogleTest() {
+        open("https://google.com");
+
+        // Ввести Appium в поиск
+        $(byName("q")).setValue("habr").pressEnter();
+
+        // Проверить, что Appium появился в результатах поиска
+        $("html").shouldHave(text("habr.com"));
+    }
+
+    @Test
+    public void yandexSearchAtGoogleTest() {
+        open("https://google.com");
+
+        // Ввести Appium в поиск
+        $(byName("q")).setValue("yandex").pressEnter();
+
+        // Проверить, что Appium появился в результатах поиска
+        $("html").shouldHave(text("yandex.ru"));
+    }
+
+    @Test
+    public void dockerSearchAtGoogleTest() {
+        open("https://google.com");
+
+        // Ввести Appium в поиск
+        $(byName("q")).setValue("docker").pressEnter();
+
+        // Проверить, что Appium появился в результатах поиска
+        $("html").shouldHave(text("www.docker.com"));
+    }
+
+    @Test
+    public void jenkinsSearchAtGoogleTest() {
+        open("https://google.com");
+
+        // Ввести Appium в поиск
+        $(byName("q")).setValue("jenkins").pressEnter();
+
+        // Проверить, что Appium появился в результатах поиска
+        $("html").shouldHave(text("www.jenkins.io"));
+    }
+
+    @Test
+    public void allureSearchAtGoogleTest() {
+        open("https://google.com");
+
+        // Ввести Appium в поиск
+        $(byName("q")).setValue("allure").pressEnter();
+
+        // Проверить, что Appium появился в результатах поиска
+        $("html").shouldHave(text("allure.qatools.ru"));
+    }
 }
