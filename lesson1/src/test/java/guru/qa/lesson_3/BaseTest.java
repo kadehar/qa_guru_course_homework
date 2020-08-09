@@ -1,4 +1,4 @@
-package guru.qa.lesson_2;
+package guru.qa.lesson_3;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterEach;
